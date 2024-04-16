@@ -29,5 +29,5 @@ for (const lumpSum of allLumpSums) {
     }
 }
 
-writeToDisk('package/package.json', JSON.stringify(Object.assign(packageJSON, { version: packageJSON.version + '+' + latest, devDependencies: undefined })))
+writeToDisk('package/package.json', JSON.stringify(Object.assign(packageJSON, { version: packageJSON.version + '-' + latest, devDependencies: undefined })))
 writeToDisk('package/index.js', '')
