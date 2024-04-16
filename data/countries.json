@@ -1,0 +1,1562 @@
+[
+  {
+    "names": [
+      "Andorra"
+    ],
+    "code": "AD"
+  },
+  {
+    "names": [
+      "Vereinigte Arabische Emirate"
+    ],
+    "code": "AE"
+  },
+  {
+    "names": [
+      "Afghanistan"
+    ],
+    "code": "AF"
+  },
+  {
+    "names": [
+      "Antigua und Barbuda"
+    ],
+    "code": "AG",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Anguilla"
+    ],
+    "code": "AI",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Albanien"
+    ],
+    "code": "AL"
+  },
+  {
+    "names": [
+      "Armenien"
+    ],
+    "code": "AM"
+  },
+  {
+    "names": [
+      "Angola"
+    ],
+    "code": "AO"
+  },
+  {
+    "names": [
+      "Argentinien"
+    ],
+    "code": "AR"
+  },
+  {
+    "names": [
+      "Amerikanisch-Samoa"
+    ],
+    "code": "AS",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Österreich"
+    ],
+    "code": "AT"
+  },
+  {
+    "names": [
+      "Australien"
+    ],
+    "code": "AU"
+  },
+  {
+    "names": [
+      "Aruba"
+    ],
+    "code": "AW",
+    "lumpSumsFrom": "NL"
+  },
+  {
+    "names": [
+      "Ålandinseln"
+    ],
+    "code": "AX"
+  },
+  {
+    "names": [
+      "Aserbaidschan"
+    ],
+    "code": "AZ"
+  },
+  {
+    "names": [
+      "Bosnien und Herzegowina"
+    ],
+    "code": "BA"
+  },
+  {
+    "names": [
+      "Barbados"
+    ],
+    "code": "BB"
+  },
+  {
+    "names": [
+      "Bangladesch"
+    ],
+    "code": "BD"
+  },
+  {
+    "names": [
+      "Belgien"
+    ],
+    "code": "BE"
+  },
+  {
+    "names": [
+      "Burkina Faso"
+    ],
+    "code": "BF"
+  },
+  {
+    "names": [
+      "Bulgarien"
+    ],
+    "code": "BG"
+  },
+  {
+    "names": [
+      "Bahrain"
+    ],
+    "code": "BH"
+  },
+  {
+    "names": [
+      "Burundi"
+    ],
+    "code": "BI"
+  },
+  {
+    "names": [
+      "Benin"
+    ],
+    "code": "BJ"
+  },
+  {
+    "names": [
+      "St. Barthélemy"
+    ],
+    "code": "BL",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Bermuda"
+    ],
+    "code": "BM",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Brunei"
+    ],
+    "code": "BN"
+  },
+  {
+    "names": [
+      "Bolivien"
+    ],
+    "code": "BO"
+  },
+  {
+    "names": [
+      "Brasilien"
+    ],
+    "code": "BR"
+  },
+  {
+    "names": [
+      "Bahamas"
+    ],
+    "code": "BS"
+  },
+  {
+    "names": [
+      "Bhutan"
+    ],
+    "code": "BT"
+  },
+  {
+    "names": [
+      "Bouvetinsel"
+    ],
+    "code": "BV",
+    "lumpSumsFrom": "NO"
+  },
+  {
+    "names": [
+      "Botsuana"
+    ],
+    "code": "BW"
+  },
+  {
+    "names": [
+      "Belarus",
+      "Weißrussland"
+    ],
+    "code": "BY"
+  },
+  {
+    "names": [
+      "Belize"
+    ],
+    "code": "BZ"
+  },
+  {
+    "names": [
+      "Kanada"
+    ],
+    "code": "CA"
+  },
+  {
+    "names": [
+      "Kokosinseln"
+    ],
+    "code": "CC",
+    "lumpSumsFrom": "AU"
+  },
+  {
+    "names": [
+      "Demokratische Republik Kongo",
+      "Kongo, Demokratische Republik"
+    ],
+    "code": "CD"
+  },
+  {
+    "names": [
+      "Zentralafrikanische Republik"
+    ],
+    "code": "CF"
+  },
+  {
+    "names": [
+      "Kongo",
+      "Kongo, Republik"
+    ],
+    "code": "CG"
+  },
+  {
+    "names": [
+      "Schweiz"
+    ],
+    "code": "CH"
+  },
+  {
+    "names": [
+      "Côte d’Ivoire",
+      "Elfenbeinküste"
+    ],
+    "code": "CI"
+  },
+  {
+    "names": [
+      "Cookinseln"
+    ],
+    "code": "CK"
+  },
+  {
+    "names": [
+      "Chile"
+    ],
+    "code": "CL"
+  },
+  {
+    "names": [
+      "Kamerun"
+    ],
+    "code": "CM"
+  },
+  {
+    "names": [
+      "China"
+    ],
+    "code": "CN"
+  },
+  {
+    "names": [
+      "Kolumbien"
+    ],
+    "code": "CO"
+  },
+  {
+    "names": [
+      "Clipperton"
+    ],
+    "code": "CP",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Costa Rica"
+    ],
+    "code": "CR"
+  },
+  {
+    "names": [
+      "Kuba"
+    ],
+    "code": "CU"
+  },
+  {
+    "names": [
+      "Cabo Verde",
+      "Kap Verde"
+    ],
+    "code": "CV"
+  },
+  {
+    "names": [
+      "Curaçao"
+    ],
+    "code": "CW",
+    "lumpSumsFrom": "NL"
+  },
+  {
+    "names": [
+      "Weihnachtsinsel"
+    ],
+    "code": "CX",
+    "lumpSumsFrom": "AU"
+  },
+  {
+    "names": [
+      "Zypern"
+    ],
+    "code": "CY"
+  },
+  {
+    "names": [
+      "Tschechien",
+      "Tschechische Republik"
+    ],
+    "code": "CZ"
+  },
+  {
+    "names": [
+      "Deutschland"
+    ],
+    "code": "DE"
+  },
+  {
+    "names": [
+      "Dschibuti"
+    ],
+    "code": "DJ"
+  },
+  {
+    "names": [
+      "Dänemark"
+    ],
+    "code": "DK"
+  },
+  {
+    "names": [
+      "Dominica"
+    ],
+    "code": "DM",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Dominikanische Republik"
+    ],
+    "code": "DO"
+  },
+  {
+    "names": [
+      "Algerien"
+    ],
+    "code": "DZ"
+  },
+  {
+    "names": [
+      "Ecuador"
+    ],
+    "code": "EC"
+  },
+  {
+    "names": [
+      "Estland"
+    ],
+    "code": "EE"
+  },
+  {
+    "names": [
+      "Ägypten"
+    ],
+    "code": "EG"
+  },
+  {
+    "names": [
+      "Westsahara"
+    ],
+    "code": "EH"
+  },
+  {
+    "names": [
+      "Griechenland"
+    ],
+    "code": "GR"
+  },
+  {
+    "names": [
+      "Eritrea"
+    ],
+    "code": "ER"
+  },
+  {
+    "names": [
+      "Spanien"
+    ],
+    "code": "ES"
+  },
+  {
+    "names": [
+      "Äthiopien"
+    ],
+    "code": "ET"
+  },
+  {
+    "names": [
+      "Finnland"
+    ],
+    "code": "FI"
+  },
+  {
+    "names": [
+      "Fidschi"
+    ],
+    "code": "FJ"
+  },
+  {
+    "names": [
+      "Falklandinseln"
+    ],
+    "code": "FK",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Mikronesien"
+    ],
+    "code": "FM",
+    "lumpSumsFrom": "PH"
+  },
+  {
+    "names": [
+      "Färöer"
+    ],
+    "code": "FO",
+    "lumpSumsFrom": "DK"
+  },
+  {
+    "names": [
+      "Frankreich"
+    ],
+    "code": "FR"
+  },
+  {
+    "names": [
+      "Gabun"
+    ],
+    "code": "GA"
+  },
+  {
+    "names": [
+      "Grenada"
+    ],
+    "code": "GD",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Georgien"
+    ],
+    "code": "GE"
+  },
+  {
+    "names": [
+      "Französisch-Guayana"
+    ],
+    "code": "GF",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Guernsey"
+    ],
+    "code": "GG",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Ghana"
+    ],
+    "code": "GH"
+  },
+  {
+    "names": [
+      "Gibraltar"
+    ],
+    "code": "GI",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Grönland"
+    ],
+    "code": "GL",
+    "lumpSumsFrom": "DK"
+  },
+  {
+    "names": [
+      "Gambia"
+    ],
+    "code": "GM"
+  },
+  {
+    "names": [
+      "Guinea"
+    ],
+    "code": "GN"
+  },
+  {
+    "names": [
+      "Guadeloupe"
+    ],
+    "code": "GP",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Äquatorialguinea"
+    ],
+    "code": "GQ"
+  },
+  {
+    "names": [
+      "Südgeorgien und Südliche Sandwichinseln"
+    ],
+    "code": "GS",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Guatemala"
+    ],
+    "code": "GT"
+  },
+  {
+    "names": [
+      "Guam"
+    ],
+    "code": "GU",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Guinea-Bissau"
+    ],
+    "code": "GW"
+  },
+  {
+    "names": [
+      "Guyana"
+    ],
+    "code": "GY",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Hongkong"
+    ],
+    "code": "HK",
+    "lumpSumsFrom": "CN"
+  },
+  {
+    "names": [
+      "Heard und die McDonaldinseln"
+    ],
+    "code": "HM",
+    "lumpSumsFrom": "AU"
+  },
+  {
+    "names": [
+      "Honduras"
+    ],
+    "code": "HN"
+  },
+  {
+    "names": [
+      "Kroatien"
+    ],
+    "code": "HR"
+  },
+  {
+    "names": [
+      "Haiti"
+    ],
+    "code": "HT"
+  },
+  {
+    "names": [
+      "Ungarn"
+    ],
+    "code": "HU"
+  },
+  {
+    "names": [
+      "Indonesien"
+    ],
+    "code": "ID"
+  },
+  {
+    "names": [
+      "Irland"
+    ],
+    "code": "IE"
+  },
+  {
+    "names": [
+      "Israel"
+    ],
+    "code": "IL"
+  },
+  {
+    "names": [
+      "Insel Man"
+    ],
+    "code": "IM"
+  },
+  {
+    "names": [
+      "Indien"
+    ],
+    "code": "IN"
+  },
+  {
+    "names": [
+      "Britisches Territorium im Indischen Ozean"
+    ],
+    "code": "IO",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Irak"
+    ],
+    "code": "IQ"
+  },
+  {
+    "names": [
+      "Iran"
+    ],
+    "code": "IR"
+  },
+  {
+    "names": [
+      "Island"
+    ],
+    "code": "IS"
+  },
+  {
+    "names": [
+      "Italien"
+    ],
+    "code": "IT"
+  },
+  {
+    "names": [
+      "Jersey"
+    ],
+    "code": "JE"
+  },
+  {
+    "names": [
+      "Jamaika"
+    ],
+    "code": "JM"
+  },
+  {
+    "names": [
+      "Jordanien"
+    ],
+    "code": "JO"
+  },
+  {
+    "names": [
+      "Japan"
+    ],
+    "code": "JP"
+  },
+  {
+    "names": [
+      "Kenia"
+    ],
+    "code": "KE"
+  },
+  {
+    "names": [
+      "Kirgisistan"
+    ],
+    "code": "KG"
+  },
+  {
+    "names": [
+      "Kambodscha"
+    ],
+    "code": "KH"
+  },
+  {
+    "names": [
+      "Kiribati"
+    ],
+    "code": "KI"
+  },
+  {
+    "names": [
+      "Komoren"
+    ],
+    "code": "KM"
+  },
+  {
+    "names": [
+      "St. Kitts und Nevis"
+    ],
+    "code": "KN",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Nordkorea",
+      "Korea, Demokratische Volksrepublik"
+    ],
+    "code": "KP"
+  },
+  {
+    "names": [
+      "Südkorea",
+      "Korea, Republik"
+    ],
+    "code": "KR"
+  },
+  {
+    "names": [
+      "Kuwait"
+    ],
+    "code": "KW"
+  },
+  {
+    "names": [
+      "Kaimaninseln"
+    ],
+    "code": "KY",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Kasachstan"
+    ],
+    "code": "KZ"
+  },
+  {
+    "names": [
+      "Laos"
+    ],
+    "code": "LA"
+  },
+  {
+    "names": [
+      "Libanon"
+    ],
+    "code": "LB"
+  },
+  {
+    "names": [
+      "St. Lucia"
+    ],
+    "code": "LC",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Liechtenstein"
+    ],
+    "code": "LI"
+  },
+  {
+    "names": [
+      "Sri Lanka"
+    ],
+    "code": "LK"
+  },
+  {
+    "names": [
+      "Liberia"
+    ],
+    "code": "LR"
+  },
+  {
+    "names": [
+      "Lesotho"
+    ],
+    "code": "LS"
+  },
+  {
+    "names": [
+      "Litauen"
+    ],
+    "code": "LT"
+  },
+  {
+    "names": [
+      "Luxemburg"
+    ],
+    "code": "LU"
+  },
+  {
+    "names": [
+      "Lettland"
+    ],
+    "code": "LV"
+  },
+  {
+    "names": [
+      "Libyen"
+    ],
+    "code": "LY"
+  },
+  {
+    "names": [
+      "Marokko"
+    ],
+    "code": "MA"
+  },
+  {
+    "names": [
+      "Monaco"
+    ],
+    "code": "MC"
+  },
+  {
+    "names": [
+      "Moldau",
+      "Moldau, Republik"
+    ],
+    "code": "MD"
+  },
+  {
+    "names": [
+      "Montenegro"
+    ],
+    "code": "ME"
+  },
+  {
+    "names": [
+      "St. Martin"
+    ],
+    "code": "MF",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Madagaskar"
+    ],
+    "code": "MG"
+  },
+  {
+    "names": [
+      "Marshallinseln",
+      "Marshall Inseln"
+    ],
+    "code": "MH"
+  },
+  {
+    "names": [
+      "Nordmazedonien"
+    ],
+    "code": "MK"
+  },
+  {
+    "names": [
+      "Mali"
+    ],
+    "code": "ML"
+  },
+  {
+    "names": [
+      "Myanmar"
+    ],
+    "code": "MM"
+  },
+  {
+    "names": [
+      "Mongolei"
+    ],
+    "code": "MN"
+  },
+  {
+    "names": [
+      "Macau"
+    ],
+    "code": "MO",
+    "lumpSumsFrom": "CN"
+  },
+  {
+    "names": [
+      "Nördliche Marianen"
+    ],
+    "code": "MP",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Martinique"
+    ],
+    "code": "MQ",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Mauretanien"
+    ],
+    "code": "MR"
+  },
+  {
+    "names": [
+      "Montserrat"
+    ],
+    "code": "MS",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Malta"
+    ],
+    "code": "MT"
+  },
+  {
+    "names": [
+      "Mauritius"
+    ],
+    "code": "MU"
+  },
+  {
+    "names": [
+      "Malediven"
+    ],
+    "code": "MV"
+  },
+  {
+    "names": [
+      "Malawi"
+    ],
+    "code": "MW"
+  },
+  {
+    "names": [
+      "Mexiko"
+    ],
+    "code": "MX"
+  },
+  {
+    "names": [
+      "Malaysia"
+    ],
+    "code": "MY"
+  },
+  {
+    "names": [
+      "Mosambik"
+    ],
+    "code": "MZ"
+  },
+  {
+    "names": [
+      "Namibia"
+    ],
+    "code": "NA"
+  },
+  {
+    "names": [
+      "Neukaledonien"
+    ],
+    "code": "NC",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Niger"
+    ],
+    "code": "NE"
+  },
+  {
+    "names": [
+      "Norfolkinsel"
+    ],
+    "code": "NF",
+    "lumpSumsFrom": "AU"
+  },
+  {
+    "names": [
+      "Nigeria"
+    ],
+    "code": "NG"
+  },
+  {
+    "names": [
+      "Nicaragua"
+    ],
+    "code": "NI"
+  },
+  {
+    "names": [
+      "Niederlande"
+    ],
+    "code": "NL"
+  },
+  {
+    "names": [
+      "Norwegen"
+    ],
+    "code": "NO"
+  },
+  {
+    "names": [
+      "Nepal"
+    ],
+    "code": "NP"
+  },
+  {
+    "names": [
+      "Nauru"
+    ],
+    "code": "NR"
+  },
+  {
+    "names": [
+      "Niue"
+    ],
+    "code": "NU",
+    "lumpSumsFrom": "NZ"
+  },
+  {
+    "names": [
+      "Neuseeland"
+    ],
+    "code": "NZ"
+  },
+  {
+    "names": [
+      "Oman"
+    ],
+    "code": "OM"
+  },
+  {
+    "names": [
+      "Panama"
+    ],
+    "code": "PA"
+  },
+  {
+    "names": [
+      "Peru"
+    ],
+    "code": "PE"
+  },
+  {
+    "names": [
+      "Französisch-Polynesien"
+    ],
+    "code": "PF",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Papua-Neuguinea"
+    ],
+    "code": "PG"
+  },
+  {
+    "names": [
+      "Philippinen"
+    ],
+    "code": "PH"
+  },
+  {
+    "names": [
+      "Pakistan"
+    ],
+    "code": "PK"
+  },
+  {
+    "names": [
+      "Polen"
+    ],
+    "code": "PL"
+  },
+  {
+    "names": [
+      "St. Pierre und Miquelon"
+    ],
+    "code": "PM",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Pitcairninseln"
+    ],
+    "code": "PN",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Puerto Rico"
+    ],
+    "code": "PR",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Portugal"
+    ],
+    "code": "PT"
+  },
+  {
+    "names": [
+      "Palau"
+    ],
+    "code": "PW"
+  },
+  {
+    "names": [
+      "Paraguay"
+    ],
+    "code": "PY"
+  },
+  {
+    "names": [
+      "Katar"
+    ],
+    "code": "QA"
+  },
+  {
+    "names": [
+      "Réunion"
+    ],
+    "code": "RE",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Rumänien"
+    ],
+    "code": "RO"
+  },
+  {
+    "names": [
+      "Serbien"
+    ],
+    "code": "RS"
+  },
+  {
+    "names": [
+      "Russland",
+      "Russische Föderation"
+    ],
+    "code": "RU"
+  },
+  {
+    "names": [
+      "Ruanda"
+    ],
+    "code": "RW"
+  },
+  {
+    "names": [
+      "Saudi-Arabien"
+    ],
+    "code": "SA"
+  },
+  {
+    "names": [
+      "Salomonen"
+    ],
+    "code": "SB"
+  },
+  {
+    "names": [
+      "Seychellen"
+    ],
+    "code": "SC"
+  },
+  {
+    "names": [
+      "Sudan"
+    ],
+    "code": "SD"
+  },
+  {
+    "names": [
+      "Schweden"
+    ],
+    "code": "SE"
+  },
+  {
+    "names": [
+      "Singapur"
+    ],
+    "code": "SG"
+  },
+  {
+    "names": [
+      "St. Helena, Ascension und Tristan da Cunha"
+    ],
+    "code": "SH",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Slowenien"
+    ],
+    "code": "SI"
+  },
+  {
+    "names": [
+      "Svalbard und Jan Mayen"
+    ],
+    "code": "SJ",
+    "lumpSumsFrom": "NO"
+  },
+  {
+    "names": [
+      "Slowakei",
+      "Slowakische Republik"
+    ],
+    "code": "SK"
+  },
+  {
+    "names": [
+      "Sierra Leone"
+    ],
+    "code": "SL"
+  },
+  {
+    "names": [
+      "San Marino"
+    ],
+    "code": "SM"
+  },
+  {
+    "names": [
+      "Senegal"
+    ],
+    "code": "SN"
+  },
+  {
+    "names": [
+      "Somalia"
+    ],
+    "code": "SO"
+  },
+  {
+    "names": [
+      "Suriname"
+    ],
+    "code": "SR",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Südsudan"
+    ],
+    "code": "SS"
+  },
+  {
+    "names": [
+      "São Tomé und Príncipe",
+      "São Tomé – Príncipe"
+    ],
+    "code": "ST"
+  },
+  {
+    "names": [
+      "El Salvador"
+    ],
+    "code": "SV"
+  },
+  {
+    "names": [
+      "Sint Maarten"
+    ],
+    "code": "SX",
+    "lumpSumsFrom": "NL"
+  },
+  {
+    "names": [
+      "Syrien"
+    ],
+    "code": "SY"
+  },
+  {
+    "names": [
+      "Eswatini"
+    ],
+    "code": "SZ"
+  },
+  {
+    "names": [
+      "Turks- und Caicosinseln"
+    ],
+    "code": "TC",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Tschad"
+    ],
+    "code": "TD"
+  },
+  {
+    "names": [
+      "Französische Süd- und Antarktisgebiete"
+    ],
+    "code": "TF",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Togo"
+    ],
+    "code": "TG"
+  },
+  {
+    "names": [
+      "Thailand"
+    ],
+    "code": "TH"
+  },
+  {
+    "names": [
+      "Tadschikistan"
+    ],
+    "code": "TJ"
+  },
+  {
+    "names": [
+      "Tokelau"
+    ],
+    "code": "TK",
+    "lumpSumsFrom": "NZ"
+  },
+  {
+    "names": [
+      "Timor-Leste"
+    ],
+    "code": "TL"
+  },
+  {
+    "names": [
+      "Turkmenistan"
+    ],
+    "code": "TM"
+  },
+  {
+    "names": [
+      "Tunesien"
+    ],
+    "code": "TN"
+  },
+  {
+    "names": [
+      "Tonga"
+    ],
+    "code": "TO"
+  },
+  {
+    "names": [
+      "Türkei"
+    ],
+    "code": "TR"
+  },
+  {
+    "names": [
+      "Trinidad und Tobago"
+    ],
+    "code": "TT"
+  },
+  {
+    "names": [
+      "Tuvalu"
+    ],
+    "code": "TV"
+  },
+  {
+    "names": [
+      "Taiwan"
+    ],
+    "code": "TW"
+  },
+  {
+    "names": [
+      "Tansania"
+    ],
+    "code": "TZ"
+  },
+  {
+    "names": [
+      "Ukraine"
+    ],
+    "code": "UA"
+  },
+  {
+    "names": [
+      "Uganda"
+    ],
+    "code": "UG"
+  },
+  {
+    "names": [
+      "Vereinigtes Königreich",
+      "Vereinigtes Königreich von Großbritannien und Nordirland"
+    ],
+    "code": "GB"
+  },
+  {
+    "names": [
+      "Kleinere Amerikanische Überseeinseln"
+    ],
+    "code": "UM",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Vereinigte Staaten",
+      "Vereinigte Staaten von Amerika (USA)"
+    ],
+    "code": "US"
+  },
+  {
+    "names": [
+      "Uruguay"
+    ],
+    "code": "UY"
+  },
+  {
+    "names": [
+      "Usbekistan"
+    ],
+    "code": "UZ"
+  },
+  {
+    "names": [
+      "Vatikanstadt",
+      "Vatikanstaat"
+    ],
+    "code": "VA"
+  },
+  {
+    "names": [
+      "St. Vincent und Grenadinen"
+    ],
+    "code": "VC",
+    "lumpSumsFrom": "TT"
+  },
+  {
+    "names": [
+      "Venezuela"
+    ],
+    "code": "VE"
+  },
+  {
+    "names": [
+      "Britische Jungferninseln"
+    ],
+    "code": "VG",
+    "lumpSumsFrom": "GB"
+  },
+  {
+    "names": [
+      "Amerikanische Jungferninseln"
+    ],
+    "code": "VI",
+    "lumpSumsFrom": "US"
+  },
+  {
+    "names": [
+      "Vietnam"
+    ],
+    "code": "VN"
+  },
+  {
+    "names": [
+      "Vanuatu"
+    ],
+    "code": "VU"
+  },
+  {
+    "names": [
+      "Wallis und Futuna"
+    ],
+    "code": "WF",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Samoa"
+    ],
+    "code": "WS"
+  },
+  {
+    "names": [
+      "Jemen"
+    ],
+    "code": "YE"
+  },
+  {
+    "names": [
+      "Mayotte"
+    ],
+    "code": "YT",
+    "lumpSumsFrom": "FR"
+  },
+  {
+    "names": [
+      "Südafrika"
+    ],
+    "code": "ZA"
+  },
+  {
+    "names": [
+      "Sambia"
+    ],
+    "code": "ZM"
+  },
+  {
+    "names": [
+      "Simbabwe"
+    ],
+    "code": "ZW"
+  },
+  {
+    "names": [
+      "Kosovo"
+    ],
+    "code": "XK"
+  }
+]

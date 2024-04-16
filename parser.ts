@@ -1,25 +1,24 @@
-import fs from 'fs'
-import { readdir } from 'node:fs/promises'
-import { CountryLumpSum } from '../../common/types.js'
-import Country from '../models/country.js'
+import { readdir, readFile, writeFile } from 'node:fs/promises'
+import countries from './data/countries.json'  assert { type: 'json' }
 
-interface RawLumpSum {
-  country: string
-  catering8: string
-  catering24: string
-  overnight: string
-}
+const lumpsumTypes = ['overnight', 'catering8', 'catering24'] as const
+type LumpsumType = (typeof lumpsumTypes)[number]
+type LumpSum = { [key in LumpsumType]: number }
 
-interface RawLumpSumWithCities extends RawLumpSum {
-  specials?: {
+export interface CountryLumpSum extends LumpSum {
+  validFrom: string
+  specials?: ({
     city: string
-    catering8: string
-    catering24: string
-    overnight: string
-  }[]
+  } & LumpSum)[]
 }
 
-export type LumpSumsJSON = { data: LumpSumWithCountryCode[]; validFrom: number }[]
+type RawLumpSum = { country: string } & { [key in LumpsumType]: string }
+
+type RawLumpSumWithCities = RawLumpSum & {
+  specials?: ({ city: string } & { [key in LumpsumType]: string })[]
+}
+
+type LumpSumsJSON = { data: LumpSumWithCountryCode[]; validFrom: string }[]
 type LumpSumWithCountryCode = Omit<CountryLumpSum, 'validFrom'> & { countryCode: string }
 type LumpSumWithCountryName = Omit<CountryLumpSum, 'validFrom'> & { country: string }
 
@@ -39,26 +38,25 @@ export async function parseLumpSumsFiles() {
   const lumpSums: LumpSumsJSON = []
   const files = await readdir('./data')
   for (const file of files) {
-    const matched = file.match(/lumpSums_(\d{4}-\d{2}-\d{2})\.tsv/i)
+    const matched = file.match(/(\d{4}-\d{2}-\d{2})\.tsv/i)
     if (matched && matched.length > 1) {
-      const dataStr = fs.readFileSync('./data/' + file, 'utf8')
-      const validFrom = new Date(matched[1]).valueOf()
-      const data = await parseRawLumpSums(dataStr)
+      const dataStr = await readFile('./data/' + file, 'utf8')
+      const validFrom = matched[1]
+      const data = parseRawLumpSums(dataStr)
       lumpSums.push({ validFrom, data })
     }
   }
-  fs.writeFileSync('./data/lumpSums.json', JSON.stringify(lumpSums, undefined, 2), 'utf-8')
   return lumpSums
 }
 
-export async function parseRawLumpSums(dataStr: string): Promise<LumpSumWithCountryCode[]> {
-  const refinedString = await fixTableSpezialties(dataStr)
+export function parseRawLumpSums(dataStr: string): LumpSumWithCountryCode[] {
+  const refinedString = fixTableSpezialties(dataStr)
   const data = csvToObjects(refinedString, '\t', ',', '')
   assertAreRawLumpSums(data)
   const rawLumpSums = combineSpecials(data)
   const lumpSums: LumpSumWithCountryCode[] = []
   for (const rawLumpSum of rawLumpSums) {
-    lumpSums.push(await findCountryCode(convertRawLumpSum(rawLumpSum)))
+    lumpSums.push(findCountryCode(convertRawLumpSum(rawLumpSum)))
   }
   return lumpSums
 }
@@ -83,23 +81,24 @@ function combineSpecials(rawLumpSums: (RawLumpSum & { city?: string })[]): RawLu
           break
         }
       }
-      ;(rawLumpSums[i] as any).specials = specials
+      ; (rawLumpSums[i] as any).specials = specials
       specials = []
     }
   }
   return rawLumpSums
 }
 
-async function findCountryCode(lumpSum: LumpSumWithCountryName, countryNameLanguage = 'de'): Promise<LumpSumWithCountryCode> {
-  const conditions: any = {}
-  conditions.$or = [{}, {}]
-  conditions.$or[0]['name.' + countryNameLanguage] = lumpSum.country
-  conditions.$or[1]['alias.' + countryNameLanguage] = lumpSum.country
-  const country = await Country.findOne(conditions).lean()
-  if (!country) {
+function findCountryCode(lumpSum: LumpSumWithCountryName): LumpSumWithCountryCode {
+  var countryCode: null | string = null
+  for (const c of countries) {
+    if (c.names.indexOf(lumpSum.country) !== -1) {
+      countryCode = c.code
+    }
+  }
+  if (!countryCode) {
     throw new Error('"' + lumpSum.country + '" not found!')
   }
-  const lumpSumWithCode: LumpSumWithCountryCode = Object.assign(lumpSum, { countryCode: country._id, country: undefined })
+  const lumpSumWithCode: LumpSumWithCountryCode = Object.assign(lumpSum, { countryCode, country: undefined })
   return lumpSumWithCode
 }
 
@@ -164,7 +163,7 @@ export function csvToObjects(
   return result
 }
 
-async function fixTableSpezialties(dataStr: string): Promise<string> {
+function fixTableSpezialties(dataStr: string) {
   // Remove empty Lines
   var result = dataStr.replace(/^\t+\n/gm, '')
 
