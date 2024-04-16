@@ -1,0 +1,27 @@
+name: Publish API
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["**"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+
+      - run: npm install
+      - run: tsc
+      - run: node dist/distributor.js
+
+      - name: publish
+        run: npm publish ./package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
