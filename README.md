@@ -3,7 +3,7 @@ Pauschbeträge für Verpflegungsmehraufwendungen und Übernachtungskosten für b
 
 ## Usage
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api@latest/{COUNTRY}.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api/{COUNTRY}.json`
 ```
 COUNTRY ::= ISO 3166-1 alpha-2 code (e.g. US)
           | ALL
@@ -11,11 +11,11 @@ COUNTRY ::= ISO 3166-1 alpha-2 code (e.g. US)
 
 ### Example
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api@latest/US.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api/US.json`
 
 or
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api@latest/ALL.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api/ALL.json`
 
 ## Source
 
