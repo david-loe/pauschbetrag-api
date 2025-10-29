@@ -1,5 +1,7 @@
 # pauschbetrag-api
 
+[![](https://data.jsdelivr.com/v1/package/npm/pauschbetrag-api/badge)](https://www.jsdelivr.com/package/npm/pauschbetrag-api)
+
 Pauschbeträge für Verpflegungsmehraufwendungen und Übernachtungskosten für beruflich und betrieblich veranlasste Auslandsdienstreisen.
 
 ## Usage
