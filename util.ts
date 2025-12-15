@@ -26,3 +26,9 @@ export async function writeToDisk(
       console.error(error)
     }
   }
+
+  export function buildVersion(semver: string, date: string) {
+  const compactDate = date.replace(/-/g, '');
+  const [major, minor] = semver.split('.');
+  return `${major}.${minor}.${compactDate}`;
+}

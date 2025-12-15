@@ -1,7 +1,7 @@
 import { parseLumpSumsFiles, CountryLumpSum } from "./parser.js";
 import countries from './data/countries.json'  with { type: 'json' }
 import packageJSON from './package.json'  with { type: 'json' }
-import { writeToDisk } from "./util.js";
+import { buildVersion, writeToDisk } from "./util.js";
 
 
 const allLumpSums = await parseLumpSumsFiles()
@@ -29,5 +29,5 @@ for (const lumpSum of allLumpSums) {
     }
 }
 
-writeToDisk('package/package.json', JSON.stringify(Object.assign(packageJSON, { version: packageJSON.version + '+' + latest, devDependencies: undefined })))
+writeToDisk('package/package.json', JSON.stringify(Object.assign(packageJSON, { version: buildVersion(packageJSON.version, latest), devDependencies: undefined })))
 writeToDisk('package/index.js', '')
