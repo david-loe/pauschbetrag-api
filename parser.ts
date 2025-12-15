@@ -14,6 +14,8 @@ export interface LumpSumWithSpecials extends LumpSum {
 export interface CountryLumpSum extends LumpSumWithSpecials {
   validFrom: string;
   validUntil: string | null
+  countryCode: string;
+  lumpSumsFrom?: string;
 }
 
 type RawLumpSum = { country: string } & { [key in LumpsumType]: string };
@@ -51,10 +53,10 @@ export async function parseLumpSumsFiles() {
       const dataStr = await readFile("./data/" + file, "utf8");
       const validFrom = matched[1];
       const data = parseRawLumpSums(dataStr);
-      lumpSums.push({ validFrom, data, validUntil: null });
+      lumpSums.push({ validFrom, validUntil: null, data });
     }
   }
-  // sort descending by validFrom
+  // sort descending by validFrom and add validUntil
   lumpSums.sort((a, b) => new Date(b.validFrom).valueOf() - new Date(a.validFrom).valueOf());
   for (let i = 1; i < lumpSums.length; i++) {
     lumpSums[i].validUntil = new Date(new Date(lumpSums[i - 1].validFrom).valueOf() - 86400000).toISOString().split('T')[0];
@@ -123,7 +125,7 @@ function findCountryCode(
 }
 
 function convertRawLumpSum(raw: RawLumpSumWithCities): LumpSumWithCountryName {
-  const specials: CountryLumpSum["specials"] = [];
+  const specials: LumpSumWithSpecials["specials"] = [];
   if (raw.specials) {
     for (const spezial of raw.specials) {
       specials.push({

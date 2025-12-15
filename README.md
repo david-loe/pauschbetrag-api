@@ -33,6 +33,7 @@ Array<{
   catering8: number
   overnight: number
   countryCode: string //ISO 3166-1 alpha-2 code
+  lumpSumsFrom?: string //optional: ISO 3166-1 alpha-2 code
   validFrom: string //YYYY-MM-DD
   validUntil: string | null //YYYY-MM-DD - null if latest
   specials: Array<{

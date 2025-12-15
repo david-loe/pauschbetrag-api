@@ -8,6 +8,6 @@
 
 ## Lump Sums for Germany
 
-Keep in mind that the lump sums for germany are not included in the puplications of the `Bundesministerium der Finanzen`.
+Keep in mind that the lump sums for Germany are not included in the publications of the `Bundesministerium der Finanzen`.
 
-To Update the lump sums of germany add a line manualy to the corresponding lump sum file.
+To update the lump sums of Germany update `data/DE.json` manually.
