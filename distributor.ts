@@ -1,6 +1,6 @@
 import { parseLumpSumsFiles, CountryLumpSum } from "./parser.js";
-import countries from './data/countries.json'  assert { type: 'json' }
-import packageJSON from './package.json'  assert { type: 'json' }
+import countries from './data/countries.json'  with { type: 'json' }
+import packageJSON from './package.json'  with { type: 'json' }
 import { writeToDisk } from "./util.js";
 
 

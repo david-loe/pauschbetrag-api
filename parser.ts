@@ -1,5 +1,5 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
-import countries from "./data/countries.json" assert { type: "json" };
+import countries from "./data/countries.json" with { type: "json" };
 
 const lumpsumTypes = ["overnight", "catering8", "catering24"] as const;
 type LumpsumType = (typeof lumpsumTypes)[number];
