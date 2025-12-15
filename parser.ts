@@ -1,15 +1,19 @@
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import countries from "./data/countries.json" with { type: "json" };
 
 const lumpsumTypes = ["overnight", "catering8", "catering24"] as const;
 type LumpsumType = (typeof lumpsumTypes)[number];
 type LumpSum = { [key in LumpsumType]: number };
 
-export interface CountryLumpSum extends LumpSum {
-  validFrom: string;
+export interface LumpSumWithSpecials extends LumpSum {
   specials?: ({
     city: string;
   } & LumpSum)[];
+}
+
+export interface CountryLumpSum extends LumpSumWithSpecials {
+  validFrom: string;
+  validUntil: string | null
 }
 
 type RawLumpSum = { country: string } & { [key in LumpsumType]: string };
@@ -18,11 +22,11 @@ type RawLumpSumWithCities = RawLumpSum & {
   specials?: ({ city: string } & { [key in LumpsumType]: string })[];
 };
 
-type LumpSumsJSON = { data: LumpSumWithCountryCode[]; validFrom: string }[];
-type LumpSumWithCountryCode = Omit<CountryLumpSum, "validFrom"> & {
+type LumpSumsJSON = { data: LumpSumWithCountryCode[]; validFrom: string; validUntil: string | null }[];
+interface LumpSumWithCountryCode extends LumpSumWithSpecials {
   countryCode: string;
 };
-type LumpSumWithCountryName = Omit<CountryLumpSum, "validFrom"> & {
+interface LumpSumWithCountryName extends LumpSumWithSpecials {
   country: string;
 };
 
@@ -47,8 +51,13 @@ export async function parseLumpSumsFiles() {
       const dataStr = await readFile("./data/" + file, "utf8");
       const validFrom = matched[1];
       const data = parseRawLumpSums(dataStr);
-      lumpSums.push({ validFrom, data });
+      lumpSums.push({ validFrom, data, validUntil: null });
     }
+  }
+  // sort descending by validFrom
+  lumpSums.sort((a, b) => new Date(b.validFrom).valueOf() - new Date(a.validFrom).valueOf());
+  for (let i = 1; i < lumpSums.length; i++) {
+    lumpSums[i].validUntil = new Date(new Date(lumpSums[i - 1].validFrom).valueOf() - 86400000).toISOString().split('T')[0];
   }
   return lumpSums;
 }

@@ -13,7 +13,7 @@ for (const country of countries) {
     for (const ls of allLumpSums) {
         for (const c of ls.data) {
             if (c.countryCode === lumpSumCode) {
-                lumpSums.push(Object.assign(c, { validFrom: ls.validFrom, lumpSumsFrom: country.lumpSumsFrom }))
+                lumpSums.push(Object.assign(c, { validFrom: ls.validFrom, validUntil: ls.validUntil, lumpSumsFrom: country.lumpSumsFrom }))
             }
         }
     }

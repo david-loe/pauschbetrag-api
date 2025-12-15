@@ -6,7 +6,7 @@ Pauschbeträge für Verpflegungsmehraufwendungen und Übernachtungskosten für b
 
 ## Usage
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api/{COUNTRY}.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api@1/{COUNTRY}.json`
 
 ```
 COUNTRY ::= ISO 3166-1 alpha-2 code (e.g. US)
@@ -15,11 +15,55 @@ COUNTRY ::= ISO 3166-1 alpha-2 code (e.g. US)
 
 ### Example
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api/US.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api@1/US.json`
 
 or
 
-`https://cdn.jsdelivr.net/npm/pauschbetrag-api/ALL.json`
+`https://cdn.jsdelivr.net/npm/pauschbetrag-api@1/ALL.json`
+
+## Schema
+
+### V1.1
+
+#### /{COUNTRY}.json
+
+```ts
+Array<{
+  catering24: number
+  catering8: number
+  overnight: number
+  countryCode: string //ISO 3166-1 alpha-2 code
+  validFrom: string //YYYY-MM-DD
+  validUntil: string | null //YYYY-MM-DD - null if latest
+  specials: Array<{
+    catering24: number
+    catering8: number
+    overnight: number
+    city: string
+  }>
+}>
+```
+
+#### /ALL.json
+
+```ts
+Array<{
+  validFrom: string //YYYY-MM-DD
+  validUntil: string | null //YYYY-MM-DD - null if latest
+  data: Array<{
+    catering24: number
+    catering8: number
+    overnight: number
+    countryCode: string //ISO 3166-1 alpha-2 code
+    specials: Array<{
+      catering24: number
+      catering8: number
+      overnight: number
+      city: string
+    }>
+  }>
+}>
+```
 
 ## Source
 
